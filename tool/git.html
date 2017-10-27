@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>git|王朝的博客</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/mainShuo.css" />
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+</head>
+<body>
+	<hr />
+  <header>
+  	 <div class="title">
+  	 	<i class="iconfont" id="iconfont">&#xe601;</i>
+  	 	<span class="myself" id="myself"><a href="##" title="">王朝的博客</a></span>
+  	 </div>
+  	 <div class="list" id="list">
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe635;</i>
+  	 		<span><a href="../index.html" title="">首页</a></span>
+  	 	</div>
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe600;</i>
+  	 		<span><a href="../class.html" title="">分类</a></span>
+  	 	</div>
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe696;</i>
+  	 		<span><a href="../about.html" title="">关于</a></span>
+  	 	</div>
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe695;</i>
+  	 		<span><a href="../archives.html" title="">归档</a></span>
+  	 	</div>
+  	 </div>
+  </header>
+  <!-- header结束 -->
+
+  <div class="main" id="main">
+  	  
+  	  <div class="ifo">
+  	  	 <span class="sTitle">
+  	  	 	<a href="##" title="">git常用命令</a>
+  	  	 </span>
+  	  	 <ul>
+  	  	 	<li>发表于2017-10-27</li>
+  	  	 	<li>分类于<a href="./tool.html">工具</a></li>
+  	  	 </ul>
+  	  	 <p id="p">
+  	  	 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果要我说我能这么相对来说轻松一点看教程创博客，我得感谢我的前辈--廖雪峰老师。在我最开始了解git的时候，是他的教程一点一点带我走进命令行的世界。现在我奉上他的网址以及我的一点小总结。<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00150154460073692d151e784de4d718c67ce836f72c7c4000" title="">廖雪峰git教程</a><br />
+          (一)初始化git仓库<br />
+          1，初始化git仓库先使用<code>git init</code>命令。<br />
+          2, 使用命令<code>git add <file></code>,可反复多次添加文件，或者使用<code>git add .</code>命令。<br />
+          3, 使用<code>git commit -m "提示修改的消息以供以后参考"</code>,完成。
+          (二)工作区命令<br />
+          1, 要随时掌握工作区的状态，使用<code>git status</code>命令。<br />
+          2,<code>status</code>命令告诉你有文件被修改过，用<code>git diff</code>命令查看被修改的内容。<br />
+          (三)添加远程库<br />
+          1,要关联远程库使用<code>git remote add github git@github.com:username/xxxx.git</code><br />
+          2,关联后使用<code>git push -u github master</code>第一次推送master里面的所有内容。<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果不了解，我强烈建议您去看廖雪峰的git教程，想来对你会有所帮助。
+  	  	 </p>
+  	  </div>
+
+  </div>
+  <!-- main结束 -->
+
+  <footer>
+  	  <span>2017/10/26&nbsp; by&nbsp; 王朝</span>
+  	  <p>借鉴于<a href="https://github.com/iissnan/hexo-theme-next">next</a></p>
+  </footer>
+
+</body>
+<script type="text/javascript" src="../javascript/index.js"></script>
+</html>
