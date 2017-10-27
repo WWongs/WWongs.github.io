@@ -1,0 +1,28 @@
+.archives{
+	margin: 130px auto 180px auto;
+	width: 100%;
+}
+.archives span{
+	display: block;
+	width: 270px;
+	margin: 0 auto;
+	font-size: 18px;
+}
+.archives .ulArchices ol{
+    list-style: decimal;
+    width: 300px;
+    margin: 0 auto;
+}
+.archives .ulArchices ol li{
+	font-size: 16px;
+	margin-top: 20px;
+}
+.archives .ulArchices ol li a{
+	color: #545454;
+}
+.archives .ulArchices ol li:hover a{
+	text-decoration: underline;
+}
+.textCenter{
+	text-align: center;
+}
