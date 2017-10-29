@@ -40,14 +40,14 @@
   	  
   	  <div class="ifo">
   	  	 <span class="sTitle">
-  	  	 	<a href="##" title="">js实现信息滚动</a>
+  	  	 	<a href="##" title="">js实现信息滚动(自动)</a>
   	  	 </span>
   	  	 <ul>
   	  	 	<li>发表于2017-10-29</li>
   	  	 	<li>分类于<a href="./classJs.html">javascript篇</a></li>
   	  	 </ul>
   	  	 <p id="p">
-  	  	 	&nbsp;&nbsp;js实现信息的自动滚动效果也是笔者早期的一个小demo，今天就拿出来说一下实现的原理和效果。<br />
+  	  	 	&nbsp;&nbsp;js实现信息列表的自动滚动效果也是笔者早期的一个小demo，今天就拿出来说一下实现的原理和效果。<br />
           &nbsp;&nbsp;我的基本实现思路是先用一个div套住信息列表，如下图所示：<br /><br />
           <img src="../images/gundong1.PNG" alt="信息滚动demo" /><br /><br />
           &nbsp;&nbsp;然后为了防止信息滚动交接时出现裂痕，所以克隆一个信息列表。最后用一个定时器，里面一个函数判断信息列表滚动的<strong>scrollTop</strong>是否大于它的<strong>scrollHeight</strong>,大于就一直<strong>++</strong>，否则赋值为0。如下代码：<br />
