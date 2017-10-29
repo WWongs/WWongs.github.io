@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js信息滚动|王朝的博客</title>
+  <link rel="icon" href="../images/logo.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/mainShuo.css" />
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+</head>
+<body>
+	<hr />
+  <header>
+  	 <div class="title">
+  	 	<i class="iconfont" id="iconfont">&#xe601;</i>
+  	 	<span class="myself" id="myself"><a href="##" title="">王朝的博客</a></span>
+  	 </div>
+  	 <div class="list" id="list">
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe635;</i>
+  	 		<span><a href="../index.html" title="">首页</a></span>
+  	 	</div>
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe600;</i>
+  	 		<span><a href="../class.html" title="">分类</a></span>
+  	 	</div>
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe696;</i>
+  	 		<span><a href="../about.html" title="">关于</a></span>
+  	 	</div>
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe695;</i>
+  	 		<span><a href="../archives.html" title="">归档</a></span>
+  	 	</div>
+  	 </div>
+  </header>
+  <!-- header结束 -->
+
+  <div class="main" id="main">
+  	  
+  	  <div class="ifo">
+  	  	 <span class="sTitle">
+  	  	 	<a href="##" title="">js实现信息滚动</a>
+  	  	 </span>
+  	  	 <ul>
+  	  	 	<li>发表于2017-10-29</li>
+  	  	 	<li>分类于<a href="./classJs.html">javascript篇</a></li>
+  	  	 </ul>
+  	  	 <p id="p">
+  	  	 	&nbsp;&nbsp;js实现信息的自动滚动效果也是笔者早期的一个小demo，今天就拿出来说一下实现的原理和效果。<br />
+          &nbsp;&nbsp;我的基本实现思路是先用一个div套住信息列表，如下图所示：<br /><br />
+          <img src="../images/gundong1.PNG" alt="信息滚动demo" /><br /><br />
+          &nbsp;&nbsp;然后为了防止信息滚动交接时出现裂痕，所以克隆一个信息列表。最后用一个定时器，里面一个函数判断信息列表滚动的<strong>scrollTop</strong>是否大于它的<strong>scrollHeight</strong>,大于就一直<strong>++</strong>，否则赋值为0。如下代码：<br />
+          <img src="../images/gundong2.PNG" alt="信息滚动demo" /><br /><br />
+          &nbsp;&nbsp;最后填上实现效果，希望对各位有所帮助。<br />
+          <img src="../images/gundong3.gif" alt="信息滚动demo" />
+
+
+          <p>
+  	  </div>
+
+  </div>
+  <!-- main结束 -->
+
+  <footer>
+  	  <span>2017/10/26-by-王朝</span>
+  	  <p>借鉴于<a href="https://github.com/iissnan/hexo-theme-next">next</a></p>
+  </footer>
+
+</body>
+<script type="text/javascript" src="../javascript/index.js"></script>
+</html>
