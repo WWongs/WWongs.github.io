@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>react系列|王朝的博客</title>
+  <link rel="icon" href="../images/logo.ico" type="image/x-icon"/> 
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/mainShuo.css" />
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+</head>
+<body>
+	<hr />
+  <header>
+  	 <div class="title">
+  	 	<i class="iconfont" id="iconfont">&#xe601;</i>
+  	 	<span class="myself" id="myself"><a href="##" title="">王朝的博客</a></span>
+  	 </div>
+  	 <div class="list" id="list">
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe635;</i>
+  	 		<span><a href="../index.html" title="">首页</a></span>
+  	 	</div>
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe600;</i>
+  	 		<span><a href="../class.html" title="">分类</a></span>
+  	 	</div>
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe696;</i>
+  	 		<span><a href="../about.html" title="">关于</a></span>
+  	 	</div>
+  	 	<div class="iconList">
+  	 		<i class="iconfont">&#xe695;</i>
+  	 		<span><a href="../archives.html" title="">归档</a></span>
+  	 	</div>
+  	 </div>
+  </header>
+  <!-- header结束 -->
+
+  <div class="main" id="main">
+  	  
+  	  <div class="ifo">
+  	  	 <span class="sTitle">
+  	  	 	<a href="##" title="">初学react(二)</a>
+  	  	 </span>
+  	  	 <ul>
+  	  	 	<li>发表于2017-11-3</li>
+  	  	 	<li>分类于<a href="./tool.html">工具</a></li>
+  	  	 </ul>
+  	  	 <p id="p">
+  	  	 	&nbsp;&nbsp;昨天笔者分享了我篇我初学react的博客。今天我接着来分享react组件、props、state和生命周期。<br />
+          &nbsp;&nbsp;组件从概念上就像是函数，他可以接受任意的输入值（称之为“props”），并返回一个需要在页面上展示的React元素。<br />
+          &nbsp;&nbsp;我们可以用<strong>ES6 class</strong>来定义一个组件：<br />
+          <img src="../images/react2-1.PNG" alt="react组件" /><br /><br />
+          &nbsp;&nbsp;当react遇到的元素是用户自定义的组件，他会将jsx属性作为单个对象传递给组件，这个对象称之为“props”。<br />
+          &nbsp;&nbsp;例如,这段代码会在页面上渲染出“hello World！”：<br />
+          <img src="../images/react2-2.PNG" alt="react 组件" /><br /><br />
+          &nbsp;&nbsp;到目前为止，我们只学过通过<strong>ReactDOM.render();</strong>方式来改变输出，接下来我们学习通过<strong>state</strong>来改变输出。<br />
+          &nbsp;&nbsp;我们创建一个每秒更新时间的demo来学习state。先添加一个类构造函数来初始化状态<strong>state</strong><br />
+          <img src="../images/react2-3.PNG" alt="react 组件" /><br /><br />
+          &nbsp;&nbsp;ReactDOM.render()效果为：<br />
+          <img src="../images/react2-4.PNG" alt="react 组件" /><br /><br />
+          &nbsp;&nbsp;接下来将生命周期方法添加到类中。在具有许多组件的应用程序中，在销毁时释放组件所占用的资源非常重要。每当Clock组件第一次加载到DOM中的时候，我们都想生成定时器，这在React中被称为挂载同样，每当Clock生成的这个DOM被移除的时候，我们也会想要清除定时器，这在React中被称为卸载。我们可以在组件类上声明特殊的方法，当组件挂载或卸载时，来运行一些代码:<br />
+          <img src="../images/react2-5.PNG" alt="react 组件" /><br /><br />
+          &nbsp;&nbsp;这些方法被称作<strong>生命周期钩子</strong>。当组件输出到 DOM 后会执行 componentDidMount() 钩子，这是一个建立定时器的好地方：<br />
+          <img src="../images/react2-6.PNG" alt="react组件" /><br /><br />
+          &nbsp;&nbsp;我们将在<strong>componentWillUnmount（）</strong>中卸载定时器。<br />
+          <img src="../images/react2-7.PNG" alt="react组件"><br /><br />
+          &nbsp;&nbsp;最后，我们实现了每秒执行的tick（）方法，他将使用<strong>this.setState</strong>来更新组件局部状态：<br />
+          <img src="../images/react2-8.PNG" alt="react组件" /><br /><br />
+          &nbsp;&nbsp;现在时钟每秒钟都会执行了。
+  	  	 </p>
+  	  </div>
+
+  </div>
+  <!-- main结束 -->
+
+  <footer>
+  	  <span>2017/10/26-by-王朝</span>
+  	  <p>借鉴于<a href="https://github.com/iissnan/hexo-theme-next">next</a></p>
+  </footer>
+
+</body>
+<script type="text/javascript" src="../javascript/index.js"></script>
+</html>
