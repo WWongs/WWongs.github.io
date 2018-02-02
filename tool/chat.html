@@ -47,7 +47,7 @@
   	  	 	<li>分类于<a href="./tool.html">工具</a></li>
   	  	 </ul>
   	  	 <p id="p">
-  	  	 	&nbsp;&nbsp;伴随着html5的深入学习，笔者有幸学习websocket这门新技术。并利用它完成一个简单的聊天室。在功能搭建前我们先认识一下它--websocket。它和http是有所不同的。我们都知道传统的http请求是由浏览器发起，服务端接受到一个请求后返回一个数据，这样一次来回请求就断了，所以不能用http来写即时通信。而websocket本质是一个TCP连接，它向服务器发送一个websocket请求，当服务器接受到这个websocket请求后，它会在浏览器和服务器之间建立一个socket连接，这个连接允许浏览器和服务器相互发送消息直到一方断开。接下来用代码来演示：<br />
+  	  	 	伴随着html5的深入学习，笔者有幸学习websocket这门新技术。并利用它完成一个简单的聊天室。在功能搭建前我们先认识一下它--websocket。它和http是有所不同的。我们都知道传统的http请求是由浏览器发起，服务端接受到一个请求后返回一个数据，这样一次来回请求就断了，所以不能用http来写即时通信。而websocket本质是一个TCP连接，它向服务器发送一个websocket请求，当服务器接受到这个websocket请求后，它会在浏览器和服务器之间建立一个socket连接，这个连接允许浏览器和服务器相互发送消息直到一方断开。接下来用代码来演示：<br />
           &nbsp;&nbsp;我们新建一个html文件，在里面输入如下图片内容。我们在script里面直接new一个WebSocket(注意大小写)就可以了，里面有一个参数是它的地址。协议是WS，而不是http。当连接建立以后会返回一个回调函数是<strong>onopen</strong>，相应的连接断开以后会头一个<strong>onclose</strong>的回调函数。还有一个非常重要的回调函数是<strong>onmessage</strong>，当我们接收到消息的时候触发的回调函数。<br />
           <img src="../images/chat1.PNG" alt="chat" /><br />
           &nbsp;&nbsp;它在浏览器中显示如下：<br />
