@@ -79,10 +79,12 @@ header{
 	border-bottom: 1px solid #222;
 }
 
-
+footer{
+	text-align: center;
+}
 footer span,footer p{
 	display: block;
-	width: 160px;
+	width: 500px;
 	margin: 20px auto;
 	font-size: 16px;
     color: #555555;
