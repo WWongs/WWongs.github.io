@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>学习心得|王朝的博客</title>
+	<title>axios采坑记|王朝的博客</title>
   <link rel="icon" href="../images/logo.ico" type="image/x-icon"/>
 	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/mainShuo.css" />
 	<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
-	<link rel="stylesheet" type="text/css" href="../css/archives.css" />
 </head>
 <body>
-  <hr />
+	<hr />
   <header>
   	 <div class="title">
   	 	<i class="iconfont" id="iconfont">&#xe601;</i>
@@ -36,21 +36,35 @@
   </header>
   <!-- header结束 -->
 
-  <div class="archives" id="main">
-  	<span class="textCenter">学习心得篇</span>
-  	<div class="ulArchices">
-  		<ol>
-			  <li><a href="./shuo.html" title="">1.讲个事吧</a></li>
-			  <li><a href="./axios.html" title="">2.axios post数据格式</a></li>
-  		</ol>
-  	</div>
+  <div class="main" id="main">
+  	  
+  	  <div class="ifo">
+  	  	 <span class="sTitle">
+  	  	 	<a href="##" title="axios采坑记">axios采坑记</a>
+  	  	 </span>
+  	  	 <ul>
+  	  	 	<li>发表于2018-09-05</li>
+  	  	 	<li>分类于<a href="./list.html">javascript篇</a></li>
+  	  	 </ul>
+  	  	 <p id="p">
+            最近在使用vue2.0 + bootstrap 构建后台订单管理系统，以前是使用vue-resource来进行ajax交互的，可是尤雨溪大神推荐使用axios ajax框架，我就开始我的axios踩坑之旅了。<br><br>
+            系统刚开始我是用写的原生ajax进行数据交互，后来进行重构的时候就开始使用axios了。<br><br>
+			交互过程中，后台只接受键值对方式的字符串，最终发送数据如下图所示：<br><br>
+			<img src="../images/axios1.PNG" alt=""><br>
+			可是后来无论怎么传不是多了花括号就是多了冒号，总之是各种不对，后来通过下图找到了解决办法。<br>
+			<img src="../images/axios2.PNG" alt="">	<br>
+			踩坑之路漫漫无绝期啊。
+          <p>
+  	  </div>
+
   </div>
+  <!-- main结束 -->
 
-
-   <footer>
+  <footer>
   	  <span>2017/10/26-by-王朝</span>
   	  <p>借鉴于<a href="https://github.com/iissnan/hexo-theme-next">next</a></p>
-  </footer>	
+  </footer>
+
 </body>
 <script type="text/javascript" src="../javascript/index.js"></script>
 </html>
